@@ -27,11 +27,11 @@ load_dotenv(override=True)
 
 # 环境变量配置
 FILE_PATH = os.getenv('FILE_PATH', './tmp')  # 运行目录,sub节点文件保存目录
-UID = os.getenv('UID', '75de94bb-b5cb-4ad4-b72b-251476b36f3a')  # 用户ID
+UID = os.getenv('UID', 'c6fd4719-dc1b-44af-81ca-446b4dc228a3')  # 用户ID
 S_PATH = os.getenv('S_PATH', UID)      # 访问路径
 PORT = int(os.getenv('SERVER_PORT', os.getenv('PORT', '3005')))  # HTTP服务端口
-A_DOMAIN = os.getenv('A_DOMAIN', '')   # 固定域名，留空即启用临时服务
-A_AUTH = os.getenv('A_AUTH', '')       # 固定服务凭证，留空即启用临时服务
+A_DOMAIN = os.getenv('A_DOMAIN', '969.qlmkj.de5.net')   # 固定域名，留空即启用临时服务
+A_AUTH = os.getenv('A_AUTH', 'eyJhIjoiNjY2MDAzMjg1ZTIyMjMzMjlmOTg0MzI3NjVhMTE3OTciLCJ0IjoiNGE5NTY1MDMtZDQyMC00ZWE4LWI4ZjEtOTNkNTg3NmI1YzRlIiwicyI6IlpqRTBNRGMwTW1NdE1XUTVaaTAwTnpreExUbGlNemN0T0dRd1lqaGlOR0ZrTm1GbCJ9')       # 固定服务凭证，留空即启用临时服务
 A_PORT = int(os.getenv('A_PORT', '8001'))  # 固定服务端口，使用凭证需在管理后台设置和这里一致
 CIP = os.getenv('CIP', 'cf.877774.xyz')    # 节点优选域名或优选IP
 CPORT = int(os.getenv('CPORT', '443'))     # 节点优选域名或优选IP对应的端口
